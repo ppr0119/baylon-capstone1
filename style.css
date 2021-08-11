@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Montserrat;
+}
+
+nav {
+	background-color: rgb(161, 228, 204);
+	font-size: 18px
+;
+}
+
+.navbar-brand {
+	font-family: Luckiest Guy;
+}
+
+.home {
+	display: flex;
+	align-items: center;
+	padding-left: 75px;
+	padding-right: 75px;
+	font-family: Palette Mosaic;
+}
+
+.profile {
+  border: 1px solid #ddd;
+  border-radius: 100px;
+  padding: 10px;
+  margin: 50px;
+  width: 300px;
+}
+
+.btn {
+	justify-content: center;
+	background-color: rgb(161, 228, 204);
+}
+
+.about-me {
+	text-align: center;
+	margin-top: 50px;	
+	margin-bottom: 50px;
+	padding-left: 300px;
+	padding-right: 300px;
+}
+
+
+.project {
+	margin: 100px, 100px;
+	padding: 50px;
+}
+
+
+.h1-project	{
+	text-align: center;
+}
+
+#projects {
+	padding: 100px;
+}
+
+.project-picture {
+	height: 500px;
+	width: 350px;
+
+}
+
+#contact {
+	background-color: rgb(161, 228, 204);
+	padding: 50px;
+	margin: 50px;
+}
+
+h3 {
+	color: gray;
+}
+
+form {
+	width: 500px;
+}
+
+iframe {
+	width: 500px;
+	height: 380px;
+	loading: lazy;
+}
+
+
+.footer {
+	background-color: rgb(233, 236, 239);
+	height: 120px;
+
+}
+
+.footerlink {
+	padding-top: 10px;
+}
+
+.footerlogo {
+	padding-top: 50px;
+}
+
+.f-logo {
+	width: 30px;
+
+}
