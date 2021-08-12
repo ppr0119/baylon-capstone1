@@ -5,101 +5,150 @@
 }
 
 nav {
-	background-color: rgb(161, 228, 204);
-	font-size: 18px
-;
+	background-color: rgb(44, 48, 57);
 }
 
 .navbar-brand {
-	font-family: Luckiest Guy;
+	font-family: Concert One;
+	font-size: 25px;
+}
+
+.collapse {
+	padding-top: 10px;
+}
+
+.navbar-nav {
+	text-align: right;
+	padding-left: 10px;
 }
 
 .home {
-	display: flex;
-	align-items: center;
-	padding-left: 75px;
-	padding-right: 75px;
+	margin: auto;
 	font-family: Palette Mosaic;
+	background-color: lightpink;
+}
+
+.home-info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+
 }
 
 .profile {
-  border: 1px solid #ddd;
-  border-radius: 100px;
+  border-radius: 10px;
   padding: 10px;
-  margin: 50px;
-  width: 300px;
+  width: 150px;
 }
 
 .btn {
 	justify-content: center;
-	background-color: rgb(161, 228, 204);
+	background-color: rgb(220, 105, 19);
+	border: none;
 }
 
 .about-me {
 	text-align: center;
-	margin-top: 50px;	
-	margin-bottom: 50px;
-	padding-left: 300px;
-	padding-right: 300px;
+	padding: 5px;
+	margin: 50px 10px;
 }
 
-
-.project {
-	margin: 100px, 100px;
-	padding: 50px;
+#projects {
+		margin: 50px 10px;
 }
-
 
 .h1-project	{
 	text-align: center;
 }
 
-#projects {
-	padding: 100px;
-}
 
 .project-picture {
-	height: 500px;
-	width: 350px;
+	height: 350px;
+	margin: auto;
 
 }
 
 #contact {
-	background-color: rgb(161, 228, 204);
-	padding: 50px;
-	margin: 50px;
+	background-color: rgb(233, 236, 239);
+	padding: 30px 30px;
+	margin: 50px 0px;
+
 }
 
-h3 {
+
+h4 {
 	color: gray;
 }
 
-form {
-	width: 500px;
+.form-group {
+	width: auto;
+	display: flex;
+	flex-direction: column;
+
 }
 
-iframe {
-	width: 500px;
-	height: 380px;
-	loading: lazy;
+.form-control {
+	align-items: center;
 }
 
+
+
+.map-responsive {
+		display: flex;
+		justify-content: center;
+    overflow:hidden;
+    padding: 40%;
+    margin-top: 30px;
+    position:relative;
+
+}
+
+.map-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    margin: auto;
+    border: none;
+
+}
 
 .footer {
-	background-color: rgb(233, 236, 239);
-	height: 120px;
+	background-color: rgb(220, 221, 222);
+	height: auto;
+	padding: 5px;
 
 }
 
-.footerlink {
-	padding-top: 10px;
+.f-links {
+	padding: 5px;
+	font-size: 12px;
+	text-decoration: none;
+	color: black;
 }
 
-.footerlogo {
-	padding-top: 50px;
+a.f-links:hover {
+	color: pink;	
+	text-decoration: none;
 }
+
 
 .f-logo {
-	width: 30px;
+	width: 15px;
+
+}
+
+@media (min-width: 768px) {
+	#contact {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 30px;
+	margin: 50px 0px;
+}
+
+
+
 
 }
