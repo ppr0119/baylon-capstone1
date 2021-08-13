@@ -1,85 +1,96 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: Montserrat;
+	box-sizing: border-box;
 }
 
 nav {
-	background-color: rgb(44, 48, 57);
+	background-color: black;
+	font-family: 'Source Code Pro', monospace;
+	text-transform: uppercase;
 }
 
 .navbar-brand {
-	font-family: Concert One;
-	font-size: 25px;
+	font-family: 'Bowlby One SC', sans-serif;
+
 }
 
-.collapse {
-	padding-top: 10px;
+a:hover {
+	color: white;
+	text-decoration: none;
 }
 
 .navbar-nav {
 	text-align: right;
 	padding-left: 10px;
+
 }
 
-.home {
+#home {
 	margin: auto;
-	font-family: Palette Mosaic;
-	background-color: lightpink;
-}
-
-.home-info {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-
-}
-
-.profile {
-  border-radius: 10px;
-  padding: 10px;
-  width: 150px;
+	padding-top: 80px;
+	font-family: 'Orbitron', sans-serif;
+	text-align: center;
+	height: 450px;
+	background-image: url("bg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
 }
 
 .btn {
+	margin-top: 20px;
 	justify-content: center;
-	background-color: rgb(220, 105, 19);
+	background-color: rgb(1, 36, 3);
 	border: none;
+	color: white;
+}
+
+.profile {
+  border-radius: 50%;
+  padding: 10px;
+  width: 200px;
+}
+
+.about-me h1 {
+	color: rgb(0, 100, 5);
 }
 
 .about-me {
+	background-color: black;
+	color: white;
 	text-align: center;
-	padding: 5px;
-	margin: 50px 10px;
+	padding: 20px;
+	height: 100%;
+	font-family: 'Source Code Pro', monospace;
 }
 
 #projects {
-		margin: 50px 10px;
+	background-color: black;
+	color: rgb(0, 100, 5);
+	padding: 50px 0px;
+	font-family: 'Source Code Pro', monospace;
 }
 
 .h1-project	{
 	text-align: center;
+
 }
 
-
-.project-picture {
+.carousel-item img {
 	height: 350px;
-	margin: auto;
 
 }
 
 #contact {
-	background-color: rgb(233, 236, 239);
-	padding: 30px 30px;
-	margin: 50px 0px;
+	background-color: black;
+	padding: 50px 30px 30px 30px;
+	color: white;
+	font-family: 'Francois One', sans-serif;
 
 }
 
-
-h4 {
-	color: gray;
-}
 
 .form-group {
 	width: auto;
@@ -92,63 +103,114 @@ h4 {
 	align-items: center;
 }
 
-
-
 .map-responsive {
-		display: flex;
-		justify-content: center;
-    overflow:hidden;
-    padding: 40%;
-    margin-top: 30px;
-    position:relative;
-
+	display: flex;
+	justify-content: center;
+	overflow:hidden;
+	padding: 40%;
+	margin-top: 30px;
+	position:relative;
 }
 
 .map-responsive iframe {
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-    margin: auto;
-    border: none;
-
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	position:absolute;
+	margin: auto;
+	border: none;
 }
 
 .footer {
-	background-color: rgb(220, 221, 222);
+	background-color: rgb(1, 36, 3);
 	height: auto;
 	padding: 5px;
-
 }
 
 .f-links {
 	padding: 5px;
 	font-size: 12px;
+	font-weight: bold;
 	text-decoration: none;
 	color: black;
 }
-
-a.f-links:hover {
-	color: pink;	
-	text-decoration: none;
-}
-
 
 .f-logo {
 	width: 15px;
 
 }
 
+
 @media (min-width: 768px) {
+	#home {
+		height: 480px;
+		padding-top: 200px;
+	}
+
+	.btn {
+		margin-top: 20px;
+		justify-content: center;
+		border: none;
+	}
+
+	.about-me {
+		padding: 70px 20px;
+	}
+
 	#contact {
-	display: flex;
-	flex-direction: column;
-	padding: 30px 30px;
-	margin: 50px 0px;
+		display: flex;
+		flex-direction: column;
+		padding: 30px;
+		margin: 0px 5px;
+		border-style: solid;
+		border-color: white;
+	}
+
+	#projects {
+		padding: 80px 80px;
+		height: 600px;
+	}
+
+	.map-responsive {
+	   padding: 50%;
+	}
+
+	.f-links {
+		font-size: 17px;
+		font-family: 'Source Code Pro', monospace;
+		text-transform: uppercase;
+	}
+
+	.f-logo {
+		width: 25px;
+	}
+
 }
 
 
+@media (min-width: 992px) {
+	.about-me {
+		padding: 70px 200px;
+	}
 
+	#projects {
+		padding: 80px 230px;
+		height: 650px;
+	}
+
+	.carousel-item img {
+		height: 450px;
+	}
+
+	#contact {
+		padding: 100px 200px;
+		border-style: none;
+		margin: 0px;
+	}
+
+	.footer {
+		padding: 20px;
+		}
 
 }
